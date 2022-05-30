@@ -23,7 +23,7 @@ func NewYamlBean() *YamlBean {
 	}
 }
 
-//SetYamlConfig 根据文件路径设置文件
+//SetYamlConfig 根据文件路径设置文件 filepath是文件路径
 func (y *YamlBean) SetYamlConfig(filePath string) error {
 	//判断是否是文件夹
 	s, err := os.Stat(filePath)
